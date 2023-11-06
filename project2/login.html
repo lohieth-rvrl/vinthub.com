@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>vinthub</title>
+    <link rel="shortcut icon" href="img/klipartz.com.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <section id="sec1">
+    <div class="container-fluid">
+      <div class="row">
+          <nav class="navbar navbar-inverse fixed-top" id="nav1">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <i class="navbar-brand" href="#"><strong >VINTHUB</strong></i>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class=""><a href="index.html" >Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">categary<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">classification:</li>
+                                <li><a href="content1.html">British Vintage Cars</a></li>
+                                <li><a href="content2.html">American Vintage Cars</a></li>
+                                <li><a href="content3.html">German Vintage Cars</a></li>
+                                <li><a href="content4.html">Italian Vintage Cars</a></li>
+                                <li><a href="content5.html">French Vintage Cars</a></li>
+                            </ul>
+                          </li>
+                        <li><a href="#sec6" style="transform: 0.5s;">About</a></li>
+                        <li><a href="https://www.spinny.com/">sell & buy</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="area" >
+          <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+      </div>
+      <div class="card ">
+        <div class="area31" style="color: white;">
+          <button type="button" class="flip-btn" onclick="openLogin()" name="button">Login</button>
+          <div class="divider"></div>
+          <button type="button" class="flip-btn" onclick="openRegister()" name="button">sign up</button>
+        </div>
+        <hr>
+        <div class="inner-box" id="card">
+          <div class="login-form">
+            <h2>LOGIN</h2>
+            <form>
+              <div class="area1">
+                <input type="email" class="input-box" placeholder="Email" required>
+                <input type="password" class="input-box" placeholder="Password" required>
+              </div>
+              <div class="area2">
+                <div class="checkBox">
+                  <input type="checkbox" id="login-rememberMe" name="rememberMe">
+                  <label for="login-rememberMe"> Remember Me</label>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+              </div>
+            </form>
+            <div class="area3">
+              <a href="#">Forgot Password?</a>
+            </div>
+            <div class="section">
+              <a href="#">Login with Facebook</a>
+              <a href="#">Login with Google</a>
+            </div>
+          </div>
+
+          <div class="register-form">
+            <h2>REGISTER</h2>
+            <form>
+              <div class="area1">
+                <input type="text" class="input-box" placeholder="Name" required>
+                <input type="email" class="input-box" placeholder="Email" required>
+                <input type="password" class="input-box" placeholder="Password" required>
+                <input type="password" class="input-box" placeholder="Confirm Password" required>
+              </div>
+              <div class="area2">
+                <div class="checkBox">
+                  <input type="checkbox" id="rememberMe" name="rememberMe">
+                  <label for="rememberMe"> Remember Me</label>
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
+              </div>
+            </form>
+            <div class="section">
+              <a href="#">Login with Facebook</a>
+                <a href="#">Login with Google</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- javascript for card flipping -->
+    <script type="text/javascript">
+      var card = document.getElementById("card");
+      function openRegister() {
+        card.style.transform = "rotateY(-180deg)";
+      }
+      function openLogin() {
+        card.style.transform = "rotateY(0deg)";
+      }
+    </script>
+      </div>
+      </div>
+    </div>
+  </section>
+<!-- <section id="sec2">
+  <div class="container-fluid" id="con1">
+      <div class="row">
+          <nav class="navbar navbar-inverse fixed-top" id="nav1">
+              <div class="container-fluid">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <i class="navbar-brand" href="#"><strong >VINTHUB</strong></i>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                      <ul class="nav navbar-nav navbar-right">
+                          <li class=""><a href="index.html" >Home</a></li>
+                          <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#">categary<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                  <li class="dropdown-header">classification:</li>
+                                  <li><a href="content1.html">British Vintage Cars</a></li>
+                                  <li><a href="content2.html">American Vintage Cars</a></li>
+                                  <li><a href="content3.html">German Vintage Cars</a></li>
+                                  <li><a href="content4.html">Italian Vintage Cars</a></li>
+                                  <li><a href="content5.html">French Vintage Cars</a></li>
+                              </ul>
+                            </li>
+                          <li><a href="#sec6" style="transform: 0.5s;">About</a></li>
+                          <li><a href="https://www.spinny.com/">sell & buy</a></li>
+                          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                          <li><a href="#" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+          <div class="area" >
+              <ul class="circles">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ul>
+          </div>
+          <div class="col-lg-6 text-center" id="c1">
+            <h1>Wellcome Back</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas pariatur provident vel voluptatem velit. Ab quibusdam maiores aspernatur tempore ea. Consequuntur non eos aut voluptates fuga numquam quia quae blanditiis.</p>
+            <button class="btn btn-danger col-lg-2" id="b1">sign in</button>
+          </div>
+      </div>
+  </div>
+</section> -->
+</body>
+</html>
+
+<!-- 
+<div class="col-lg-12" id="w">
+  <div class="col-lg-6 col-sm-12" id="c1">
+      <h1>Wellcome Back</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas pariatur provident vel voluptatem velit. Ab quibusdam maiores aspernatur tempore ea. Consequuntur non eos aut voluptates fuga numquam quia quae blanditiis.</p>
+      <button class="btn btn-danger col-lg-2" id="b1">sign in</button>
+  </div>
+<div class="col-lg-6 col-sm-12" id="c1">
+    <h1>login</h1><br><br>
+    <form class="form-horizontal" action="/action_page.php">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+        </div><br>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="pwd">Password:</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10 col-lg-2">
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-danger" id="b2">Submit</button>
+          </div>
+        </div>
+      </form>
+</div>
+</div> -->

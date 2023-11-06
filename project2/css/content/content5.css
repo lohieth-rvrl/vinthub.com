@@ -1,0 +1,157 @@
+
+/* section */
+
+
+
+/* navigation bar */
+
+#nav1{
+    background-color: black;
+    position: fixed;
+    z-index:9999;
+    width: 100%;
+    top: 0;
+}
+#nav1 i{
+    color: white;
+}
+#nav1 #myNavbar li a {
+    color: white;
+}
+#nav1 li a {
+    background-color: black;
+    transition: 0.3s;
+    position: relative;
+}
+#nav1 li a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(245, 229, 13) ;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 1px;
+    transition: 0.3s;
+}
+#nav1 li a:hover:after{
+    width:100%
+}
+#nav1 #myNavbar li a:hover{
+    color: rgb(245, 229, 13);
+    background-color: black;
+}
+#nav1 #myNavbar .dropdown-menu{
+    color: white;
+    background-color: black;
+}
+
+#c2 #bot1{
+    margin-top: 40px;
+    color: black;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid black;
+}
+#c2 #bot1:hover{
+    font-size: medium;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* container 2 */
+
+#con2{
+    margin: 100px auto;
+}
+#c2{
+    margin: 80px 10px 0px 10px;
+    border: 1px solid rgb(179, 171, 171);
+    border-radius: 50px;
+    padding: 80px 10px;
+    transition: 0.5s;
+}#c2:hover{
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow:0px 10px 10px rgb(178, 169, 169);
+    transition: 0.5s;
+    padding: 80px 0px;
+}
+#c21 #p1,#p2,#p3,#p4,#p51,#p61,#p7,#p8,#p9,#p10{
+    padding: 0px 15px;
+    margin: 50px 0px;
+    color: black;
+}
+
+
+
+#con6{
+    background-color: black;
+    /* width: 99vw;
+    height: 60vh; */
+}
+address{
+    margin-top: 70px;
+    color: white;
+}address span{
+    color: white;
+    border:1px solid white;
+    border-radius: 50%;
+    padding: 6px;
+    padding-right: 6px;
+}
+address a{
+    margin: 10px;
+}
+.flex{
+    margin-top: 50px;
+}
+#con6 .flex h4,#p6{
+    color:white;
+}
+#p6{
+    
+    padding-left: 20px;
+    padding-bottom: -2px;
+    transition: 1s;
+}
+address h5{
+    color: rgb(245, 229, 13);
+}
+address ul li{
+    display:list-item;
+    flex-direction: column;
+    color: rgb(245, 229, 13);
+    list-style-type: none;
+}
+address ul li a,i{
+    color: white;
+}
+address i{
+    margin: 0px 5px;
+}
+address i{
+    transition: 0.3s;
+    padding: 10px;
+}
+address a:hover{
+    color: rgb(245, 229, 13);
+}address i:hover{
+    color: rgb(245, 229, 13);
+    }
+#con6 .flex h4{
+    color: rgb(245, 229, 13);
+    transition: 0.3s;
+}
+#p6 li{
+    list-style: none;
+    color: white;
+    transition: 0.3s;
+}#p6 li:hover{
+    color: rgb(245, 229, 13);}
+#p6:hover{
+    color: rgb(245, 229, 13);
+}
+
